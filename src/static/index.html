@@ -8,6 +8,13 @@
   </head>
   <body>
     <header>
+      <div id="admin-controls">
+        <button id="user-menu-btn" aria-label="Open user menu">👤</button>
+        <div id="user-menu" class="hidden">
+          <button id="login-btn" type="button">Login</button>
+          <button id="logout-btn" type="button" class="hidden">Logout</button>
+        </div>
+      </div>
       <h1>Mergington High School</h1>
       <h2>Extracurricular Activities</h2>
     </header>
@@ -23,6 +30,7 @@
 
       <section id="signup-container">
         <h3>Sign Up for an Activity</h3>
+        <p id="auth-status" class="info-message">Teacher login required to register or unregister students.</p>
         <form id="signup-form">
           <div class="form-group">
             <label for="email">Student Email:</label>
